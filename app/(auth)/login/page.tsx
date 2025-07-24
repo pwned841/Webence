@@ -13,8 +13,8 @@ export const metadata: Metadata = {
 export default function LoginPage() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
-      <h1 className="text-3xl font-bold text-center mt-20">Connexion désactivée</h1>
-      <p className="mt-4 text-center text-muted dark:text-muted-dark">L'accès à cette page est actuellement désactivé.</p>
+      <h1 className="text-3xl font-bold text-center mt-20">Connexion d&#39;ésactivée</h1>
+      <p className="mt-4 text-center text-muted dark:text-muted-dark">L&#39;accès à cette page est actuellement désactivé.</p>
     </div>
   );
 }

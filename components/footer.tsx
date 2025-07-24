@@ -73,15 +73,13 @@ export const Footer = () => {
             </div>
             <div className="flex justify-center space-y-4 flex-col mt-4">
               {socials.map((link) => (
-                link.name === "LinkedIn"
-                  ? <LinkedInFooterIcon key={link.name} href={link.href} />
-                  : <Link
-                      key={link.name}
-                      className="transition-colors hover:text-black text-muted dark:text-muted-dark dark:hover:text-neutral-400 text-xs sm:text-sm"
-                      href={link.href}
-                    >
-                      {link.name}
-                    </Link>
+                <Link
+                  key={link.name}
+                  className="transition-colors hover:text-black text-muted dark:text-muted-dark dark:hover:text-neutral-400 text-xs sm:text-sm"
+                  href={link.href}
+                >
+                  {link.name}
+                </Link>
               ))}
             </div>
           </div>
