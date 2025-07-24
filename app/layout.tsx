@@ -4,6 +4,8 @@ import { GeistSans } from "geist/font/sans";
 import { cn } from "@/lib/utils";
 import { ViewTransitions } from "next-view-transitions";
 import { ThemeProvider } from "@/context/theme-provider";
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata: Metadata = {
   title: "Webence",
@@ -38,6 +40,8 @@ export default function RootLayout({
             defaultTheme="light"
           >
             {children}
+            <Analytics />
+            <SpeedInsights />
           </ThemeProvider>
         </body>
       </html>
