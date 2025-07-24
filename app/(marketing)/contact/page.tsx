@@ -11,28 +11,6 @@ import Image from "next/image";
 import { useTheme } from "next-themes";
 import { Logo } from "@/components/Logo";
 
-// Custom Select avec animation
-function AnimatedSelect({ value, onChange, ...props }: any) {
-  const selectRef = useRef<HTMLSelectElement>(null);
-  return (
-    <div className="relative">
-      <select
-        ref={selectRef}
-        value={value}
-        onChange={onChange}
-        className="w-full border border-neutral-300 dark:border-neutral-700 rounded-lg px-4 py-2 pr-10 bg-white dark:bg-black text-black dark:text-white transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white appearance-none"
-        style={{ transition: 'box-shadow 0.3s, border-color 0.3s' }}
-        {...props}
-      >
-        {props.children}
-      </select>
-      <span className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-neutral-400 dark:text-neutral-500">
-        <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" /></svg>
-      </span>
-    </div>
-  );
-}
-
 // Logo LinkedIn officiel noir et blanc
 const LinkedInLogo = () => (
   <svg className="w-7 h-7" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
