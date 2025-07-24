@@ -139,12 +139,18 @@ export default function ContactPage() {
           </p>
 
           {submitStatus && (
-            <div className={`w-full max-w-md mb-6 p-4 rounded-lg ${
+            <div className={`w-full max-w-md mb-6 p-4 rounded-lg flex items-center gap-2 ${
               submitStatus.type === 'success' 
                 ? 'bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 border border-green-300 dark:border-green-700' 
                 : 'bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 border border-red-300 dark:border-red-700'
             }`}>
-              {submitStatus.message}
+              {submitStatus.type === 'success' && (
+                <div className="w-2 h-2 bg-green-500 rounded-full flex-shrink-0"></div>
+              )}
+              {submitStatus.type === 'error' && (
+                <div className="w-2 h-2 bg-red-500 rounded-full flex-shrink-0"></div>
+              )}
+              <span>{submitStatus.message}</span>
             </div>
           )}
 
