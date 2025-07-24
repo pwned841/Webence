@@ -14,9 +14,9 @@ export const Heading = ({
   as?: any;
   children: any;
   size?: "sm" | "md" | "xl" | "2xl";
-  props?: React.HTMLAttributes<HTMLHeadingElement | AnimationProps>;
+  props?: React.HTMLAttributes<HTMLHeadingElement>;
 } & MotionProps &
-  React.HTMLAttributes<HTMLHeadingElement | AnimationProps>) => {
+  React.HTMLAttributes<HTMLHeadingElement>) => {
   const sizeVariants = {
     sm: "text-xl md:text-2xl md:leading-snug",
     md: "text-3xl md:text-5xl md:leading-tight",
