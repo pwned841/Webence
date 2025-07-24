@@ -8,6 +8,7 @@ import { ContactForm } from "@/components/contact";
 import { useState, Fragment } from "react";
 import { Listbox, Transition } from "@headlessui/react";
 import Image from "next/image";
+import { FlippingText } from "@/components/ui/flipping-text";
 import { useTheme } from "next-themes";
 import { Logo } from "@/components/Logo";
 
@@ -33,6 +34,16 @@ const offers = [
   { value: "surmesure", label: "Sur-mesure" },
   { value: "autre", label: "Autre / Je ne sais pas" },
 ];
+
+const businessTypes = [
+  "restaurant",
+  "boutique",
+  "startup",
+  "cabinet",
+  "salon",
+  "freelance"
+];
+
 
 export default function ContactPage() {
   const [selectedOffer, setSelectedOffer] = useState("");
@@ -121,8 +132,8 @@ export default function ContactPage() {
       <div className="w-full min-h-screen grid grid-cols-1 md:grid-cols-2 relative overflow-hidden">
         <Background />
         <div className="flex flex-col justify-center items-center w-full h-full p-8 relative z-10">
-          <div className="mt-8" />
-          <h1 className="text-3xl font-bold mb-4 text-center">Contactez&#39;nous</h1>
+          <div className="mt-20 md:mt-24" />
+          <h1 className="text-3xl font-bold mb-4 text-center">Contactez nous</h1>
           <p className="mb-8 text-center text-black dark:text-white max-w-lg">
             Vous avez un projet ou une question ? Remplissez le formulaire ci-dessous, nous vous répondrons rapidement. Sélectionnez l&#39;offre qui vous intéresse pour un accompagnement personnalisé.
           </p>
@@ -255,8 +266,18 @@ export default function ContactPage() {
           </div>
         </div>
         <div className="relative w-full z-20 hidden md:flex border-l border-neutral-100 dark:border-neutral-900 overflow-hidden bg-gray-50 dark:bg-black items-center justify-center">
-          <div className="flex flex-col items-center justify-center w-full">
-            <span className="text-5xl md:text-7xl font-extrabold text-black dark:text-white text-center select-none mb-8">Webence</span>
+          <div className="flex flex-col items-center justify-center w-full px-8">
+                        <div className="text-center mb-8">
+              <h2 className="text-3xl md:text-4xl font-bold text-black dark:text-white mb-4 leading-tight">
+                Avec Webence,<br />
+                <span className="inline-flex items-baseline justify-center gap-2">
+                  <span>créez un site de</span>
+                  <span className="inline-block w-[180px] text-left">
+                    <FlippingText words={businessTypes} className="text-blue-600 dark:text-blue-400" />
+                  </span>
+                </span>
+              </h2>
+              </div>
             <WebenceIcon />
           </div>
         </div>
