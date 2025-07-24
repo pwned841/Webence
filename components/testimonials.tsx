@@ -12,8 +12,7 @@ export const Testimonials = () => {
     <div className="relative z-20 py-10 md:py-40">
       <Heading as="h2">Loved by people all over the universe</Heading>
       <Subheading className="text-center max-w-lg mx-auto">
-        Every AI is used by millions of people around the globe.Our APIs have
-        fan bases and people fight for us over twitter.
+        Webence est utilisé par des millions de personnes dans le monde entier. Nos API ont des fans et les gens se battent pour nous sur Twitter.
       </Subheading>
       <TestimonialGrid />
     </div>
@@ -31,7 +30,7 @@ const testimonials = [
   {
     name: "Manu Arora",
     quote:
-      "What a fantastic AI Every AI is, I just love it. It has completely transformed the way I approach problems and develop solutions.",
+      "Quel outil fantastique Webence est, je l'adore. Il a complètement transformé ma façon d'aborder les problèmes et de développer des solutions.",
     src: "https://i.pravatar.cc/150?img=1",
     designation: "Tech Innovator & Entrepreneur",
   },

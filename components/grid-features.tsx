@@ -13,49 +13,52 @@ import {
 export const GridFeatures = () => {
   const features = [
     {
-      title: "Built for developers",
+      title: "Sites ultra-rapides",
       description:
-        "Built for engineers, developers, dreamers, thinkers and doers.",
-      icon: <IconTerminal2 />,
-    },
-    {
-      title: "Ease of use",
-      description:
-        "It's as easy as using an Apple, and as expensive as buying one.",
-      icon: <IconEaseInOut />,
-    },
-    {
-      title: "Pricing like no other",
-      description:
-        "Our prices are best in the market. No cap, no lock, no credit card required.",
-      icon: <IconCurrencyDollar />,
-    },
-    {
-      title: "100% Uptime guarantee",
-      description: "We just cannot be taken down by anyone.",
+        "Des performances optimales pour un référencement et une expérience utilisateur au top.",
       icon: <IconCloud />,
     },
     {
-      title: "Multi-tenant Architecture",
-      description: "You can simply share passwords instead of buying new seats",
-      icon: <IconRouteAltLeft />,
+      title: "Design sur-mesure",
+      description:
+        "Chaque projet est unique : nous créons des interfaces modernes, élégantes et adaptées à votre image.",
+      icon: <IconEaseInOut />,
     },
     {
-      title: "24/7 Customer Support",
+      title: "Accompagnement humain",
       description:
-        "We are available a 100% of the time. Atleast our AI Agents are.",
+        "Conseils, suivi, pédagogie : nous vous guidons à chaque étape, même après la mise en ligne.",
       icon: <IconHelp />,
     },
     {
-      title: "Money back guarantee",
+      title: "SEO & visibilité",
       description:
-        "If you donot like EveryAI, we will convince you to like us.",
+        "Optimisation technique et sémantique pour que votre site soit vu et génère des contacts.",
       icon: <IconAdjustmentsBolt />,
     },
     {
-      title: "And everything else",
-      description: "I just ran out of copy ideas. Accept my sincere apologies",
+      title: "Responsive & mobile first",
+      description:
+        "Votre site est parfait sur ordinateur, tablette et mobile, sans compromis.",
+      icon: <IconRouteAltLeft />,
+    },
+    {
+      title: "Intégrations avancées",
+      description:
+        "Newsletter, analytics, paiement, multi-langue, blog, e-commerce… tout est possible.",
+      icon: <IconTerminal2 />,
+    },
+    {
+      title: "Maintenance & sécurité",
+      description:
+        "Nous veillons sur votre site : sauvegardes, mises à jour, support rapide en cas de besoin.",
       icon: <IconHeart />,
+    },
+    {
+      title: "Transparence & honnêteté",
+      description:
+        "Des devis clairs, pas de frais cachés, et un vrai partenaire sur le long terme.",
+      icon: <IconCurrencyDollar />,
     },
   ];
   return (
@@ -94,7 +97,7 @@ const Feature = ({
       )}
       <div className="mb-4 relative z-10 px-10">{icon}</div>
       <div className="text-lg font-bold mb-2 relative z-10 px-10">
-        <div className="absolute left-0 inset-y-0 h-6 w-1 rounded-tr-full rounded-br-full bg-neutral-300 dark:bg-neutral-700 group-hover:bg-blue-500 transition duration-200" />
+        <div className="absolute left-0 inset-y-0 h-6 w-1 rounded-tr-full rounded-br-full bg-neutral-300 dark:bg-neutral-700 group-hover:bg-black dark:group-hover:bg-white transition duration-200" />
         <span className="group-hover:translate-x-2 transition duration-200 inline-block">
           {title}
         </span>

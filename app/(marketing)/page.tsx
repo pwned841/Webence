@@ -2,10 +2,9 @@ import { Container } from "@/components/container";
 import { Hero } from "@/components/hero";
 import { Background } from "@/components/background";
 import { Features } from "@/components/features";
-import { Companies } from "@/components/companies";
 import { GridFeatures } from "@/components/grid-features";
-import { Testimonials } from "@/components/testimonials";
 import { CTA } from "@/components/cta";
+import { Pricing } from "@/components/pricing";
 
 export default function Home() {
   return (
@@ -15,10 +14,10 @@ export default function Home() {
       </div>
       <Container className="flex min-h-screen flex-col items-center justify-between ">
         <Hero />
-        <Companies />
         <Features />
+        <Pricing />
+        <div className="my-28" />
         <GridFeatures />
-        <Testimonials />
       </Container>
       <div className="relative">
         <div className="absolute inset-0 h-full w-full overflow-hidden">

@@ -66,10 +66,10 @@ export const DesktopNavbar = ({ navItems }: Props) => {
       </div>
       <div className="flex space-x-2 items-center">
         <ModeToggle />
-        <Button variant="simple" as={Link} href="/login">
+        <Button variant="simple" as="button" onClick={e => e.preventDefault()}>
           Login
         </Button>
-        <Button as={Link} href="/signup">
+        <Button as="button" onClick={e => e.preventDefault()}>
           Sign Up
         </Button>
       </div>

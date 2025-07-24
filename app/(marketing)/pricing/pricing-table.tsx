@@ -15,109 +15,100 @@ export function PricingTable({ pricing }: any) {
 
   const tableFeatures = [
     {
-      title: "Create APIs",
-      hobby: <CheckIcon />,
-      starter: <CheckIcon />,
-      professional: <CheckIcon />,
-      enterprise: <CheckIcon />,
+      title: "Site vitrine (1 à 5 pages)",
+      essentiel: <CheckIcon />,
+      professionnel: <CheckIcon />,
+      surmesure: <CheckIcon />,
     },
     {
-      title: "Access to Dashboard",
-      hobby: <CheckIcon />,
-      starter: <CheckIcon />,
-      professional: <CheckIcon />,
-      enterprise: <CheckIcon />,
+      title: "Design personnalisé",
+      essentiel: <CheckIcon />,
+      professionnel: <CheckIcon />,
+      surmesure: <CheckIcon />,
     },
     {
-      title: "Share functionality",
-      hobby: <CheckIcon />,
-      starter: <CheckIcon />,
-      professional: <CheckIcon />,
-      enterprise: <CheckIcon />,
+      title: "Version mobile responsive",
+      essentiel: <CheckIcon />,
+      professionnel: <CheckIcon />,
+      surmesure: <CheckIcon />,
     },
     {
-      title: "Playground Editor",
-      hobby: <CheckIcon />,
-      starter: <CheckIcon />,
-      professional: <CheckIcon />,
-      enterprise: <CheckIcon />,
+      title: "Livraison rapide (7 à 10 jours)",
+      essentiel: <CheckIcon />,
+      professionnel: "Sur demande",
+      surmesure: "Sur devis",
     },
     {
-      title: "Marketplace access",
-      hobby: <CheckIcon />,
-      starter: <CheckIcon />,
-      professional: <CheckIcon />,
-      enterprise: <CheckIcon />,
+      title: "SEO de base",
+      essentiel: <CheckIcon />,
+      professionnel: "Avancé",
+      surmesure: "Sur-mesure",
     },
     {
-      title: "On call support",
-      hobby: <CheckIcon />,
-      starter: <CheckIcon />,
-      professional: <CheckIcon />,
-      enterprise: <CheckIcon />,
+      title: "Maintenance incluse",
+      essentiel: "3 mois",
+      professionnel: "1 an",
+      surmesure: "Sur-mesure",
     },
     {
-      title: "Developer Program",
-      starter: <CheckIcon />,
-      hobby: <CheckIcon />,
-      professional: <CheckIcon />,
-      enterprise: <CheckIcon />,
+      title: "Jusqu'à 10 pages",
+      essentiel: "-",
+      professionnel: <CheckIcon />,
+      surmesure: <CheckIcon />,
     },
     {
-      title: "Advanced Analytics",
-      hobby: "On demand",
-      starter: "If you ask nicely",
-      professional: <CheckIcon />,
-      enterprise: <CheckIcon />,
+      title: "Intégration CMS (WordPress ou autre)",
+      essentiel: "-",
+      professionnel: <CheckIcon />,
+      surmesure: <CheckIcon />,
     },
     {
-      title: "Long running APIs",
-      hobby: "Probably never",
-      starter: "Nuh uh",
-      professional: <CheckIcon />,
-      enterprise: <CheckIcon />,
+      title: "SEO technique & sémantique",
+      essentiel: "-",
+      professionnel: <CheckIcon />,
+      surmesure: <CheckIcon />,
     },
     {
-      title: "Zero Downtime Guarantee",
-      hobby: "",
-      starter: "",
-      professional: <CheckIcon />,
-      enterprise: <CheckIcon />,
+      title: "Hébergement inclus 1 an",
+      essentiel: "-",
+      professionnel: <CheckIcon />,
+      surmesure: <CheckIcon />,
     },
     {
-      title: "Custom Analytics",
-      hobby: "",
-      starter: "",
-      professional: <CheckIcon />,
-      enterprise: <CheckIcon />,
+      title: "Statistiques & tracking",
+      essentiel: "-",
+      professionnel: <CheckIcon />,
+      surmesure: <CheckIcon />,
     },
     {
-      title: "Single Sign On",
-      hobby: "",
-      starter: "",
-      professional: "",
-      enterprise: <CheckIcon />,
+      title: "Site e-commerce / fonctionnalités avancées",
+      essentiel: "-",
+      professionnel: "-",
+      surmesure: <CheckIcon />,
     },
     {
-      title: "Security certificate",
-      hobby: "",
-      starter: "",
-      professional: "",
-      enterprise: <CheckIcon />,
+      title: "Blog, multi-langue, intégrations avancées",
+      essentiel: "-",
+      professionnel: "-",
+      surmesure: <CheckIcon />,
     },
     {
-      title: "Retweets from us",
-      hobby: "",
-      starter: "",
-      professional: "",
-      enterprise: <CheckIcon />,
+      title: "Accompagnement UX/UI, formation, suivi",
+      essentiel: "-",
+      professionnel: "-",
+      surmesure: <CheckIcon />,
     },
     {
-      title: "We send you flowers",
-      hobby: "",
-      starter: "",
-      professional: "",
-      enterprise: <CheckIcon />,
+      title: "Interface d’administration personnalisée",
+      essentiel: "-",
+      professionnel: "-",
+      surmesure: <CheckIcon />,
+    },
+    {
+      title: "SLA & support prioritaire",
+      essentiel: "-",
+      professionnel: "-",
+      surmesure: <CheckIcon />,
     },
   ];
 
@@ -133,15 +124,9 @@ export function PricingTable({ pricing }: any) {
                     scope="col"
                     className="max-w-xs py-3.5 pl-4 pr-3 text-left text-3xl  font-extrabold text-neutral-900 dark:text-white sm:pl-0"
                   ></th>
-                  {tiers?.map((item, index) => (
-                    <th
-                      scope="col"
-                      className="px-3 py-3.5 text-center text-lg font-semibold text-neutral-900 dark:text-white"
-                      key={`pricing-${index}`}
-                    >
-                      {item.name}
-                    </th>
-                  ))}
+                  <th className="px-3 py-3.5 text-center text-lg font-semibold text-neutral-900 dark:text-white">Essentiel</th>
+                  <th className="px-3 py-3.5 text-center text-lg font-semibold text-neutral-900 dark:text-white">Professionnel</th>
+                  <th className="px-3 py-3.5 text-center text-lg font-semibold text-neutral-900 dark:text-white">Sur-mesure</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200 dark:divide-neutral-800">
@@ -151,16 +136,13 @@ export function PricingTable({ pricing }: any) {
                       {feature.title}
                     </td>
                     <td className="whitespace-nowrap px-3 py-4 text-sm text-muted dark:text-muted-dark text-center">
-                      {feature.hobby}
+                      {feature.essentiel}
                     </td>
                     <td className="whitespace-nowrap px-3 py-4 text-sm text-muted dark:text-muted-dark text-center">
-                      {feature.starter}
+                      {feature.professionnel}
                     </td>
                     <td className="whitespace-nowrap px-3 py-4 text-sm text-muted dark:text-muted-dark text-center">
-                      {feature.professional}
-                    </td>
-                    <td className="whitespace-nowrap px-3 py-4 text-sm text-muted dark:text-muted-dark text-center">
-                      {feature.enterprise}
+                      {feature.surmesure}
                     </td>
                   </tr>
                 ))}

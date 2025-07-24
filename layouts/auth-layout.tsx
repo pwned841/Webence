@@ -18,15 +18,14 @@ export function AuthLayout({ children }: { children: React.ReactNode }) {
                 "font-semibold text-xl text-center text-muted dark:text-muted-dark"
               )}
             >
-              Every AI is used by thousands of users
+              Webence est utilisé par des milliers d'utilisateurs
             </p>
             <p
               className={cn(
                 "font-normal text-base text-center text-neutral-500 dark:text-neutral-400 mt-8"
               )}
             >
-              With lots of AI applications around, Everything AI stands out with
-              its state of the art Shitposting capabilities.
+              Avec de nombreuses applications d'IA, Webence se distingue par ses capacités de Shitposting à la pointe de la technologie.
             </p>
           </div>
           <HorizontalGradient className="top-20" />

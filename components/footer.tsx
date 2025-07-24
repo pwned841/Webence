@@ -5,12 +5,8 @@ import { Logo } from "./Logo";
 export const Footer = () => {
   const links = [
     {
-      name: "Pricing",
+      name: "Tarifs",
       href: "/pricing",
-    },
-    {
-      name: "Blog",
-      href: "/blog",
     },
     {
       name: "Contact",
@@ -19,30 +15,26 @@ export const Footer = () => {
   ];
   const legal = [
     {
-      name: "Privacy Policy",
+      name: "Politique de confidentialité",
       href: "#",
     },
     {
-      name: "Terms of Service",
+      name: "Conditions d'utilisation",
       href: "#",
     },
     {
-      name: "Refund Policy",
+      name: "Politique de remboursement",
       href: "#",
     },
   ];
   const socials = [
     {
-      name: "Twitter",
-      href: "https://twitter.com/mannupaaji",
-    },
-    {
       name: "LinkedIn",
-      href: "https://linkedin.com/in/manuarora28",
+      href: "https://www.linkedin.com/in/remi-emeriau/",
     },
     {
       name: "GitHub",
-      href: "https://github.com/manuarora700",
+      href: "https://github.com/pwned841",
     },
   ];
   return (
@@ -53,8 +45,8 @@ export const Footer = () => {
             <div className="mr-4  md:flex mb-4">
               <Logo />
             </div>
-            <div>Copyright &copy; 2024 Every Labs</div>
-            <div className="mt-2">All rights reserved</div>
+            <div>Copyright &copy; 2025 Rémi EMERIAU</div>
+            <div className="mt-2">Tous droits réservés</div>
           </div>
           <div className="grid grid-cols-3 gap-10 items-start mt-10 md:mt-0">
             <div className="flex justify-center space-y-4 flex-col mt-4">
@@ -81,20 +73,22 @@ export const Footer = () => {
             </div>
             <div className="flex justify-center space-y-4 flex-col mt-4">
               {socials.map((link) => (
-                <Link
-                  key={link.name}
-                  className="transition-colors hover:text-black text-muted dark:text-muted-dark dark:hover:text-neutral-400 text-xs sm:text-sm"
-                  href={link.href}
-                >
-                  {link.name}
-                </Link>
+                link.name === "LinkedIn"
+                  ? <LinkedInFooterIcon key={link.name} href={link.href} />
+                  : <Link
+                      key={link.name}
+                      className="transition-colors hover:text-black text-muted dark:text-muted-dark dark:hover:text-neutral-400 text-xs sm:text-sm"
+                      href={link.href}
+                    >
+                      {link.name}
+                    </Link>
               ))}
             </div>
           </div>
         </div>
       </div>
       <p className="text-center text-5xl md:text-9xl lg:text-[18rem] font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 dark:from-neutral-950 to-neutral-200 dark:to-neutral-800 inset-x-0">
-        EVERY AI
+        Webence
       </p>
     </div>
   );
