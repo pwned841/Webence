@@ -65,9 +65,9 @@ export default function ContactPage() {
         <Background />
         <div className="flex flex-col justify-center items-center w-full h-full p-8 relative z-10">
           <div className="mt-8" />
-          <h1 className="text-3xl font-bold mb-4 text-center text-black dark:text-white">Contactez-nous</h1>
+          <h1 className="text-3xl font-bold mb-4 text-center">Contactez&#39;nous</h1>
           <p className="mb-8 text-center text-black dark:text-white max-w-lg">
-            Vous avez un projet ou une question ? Remplissez le formulaire ci-dessous, nous vous répondrons rapidement. Sélectionnez l'offre qui vous intéresse pour un accompagnement personnalisé.
+            Vous avez un projet ou une question ? Remplissez le formulaire ci-dessous, nous vous répondrons rapidement. Sélectionnez l&#39;offre qui vous intéresse pour un accompagnement personnalisé.
           </p>
           <form className="w-full max-w-md space-y-6">
             <div>
@@ -106,7 +106,7 @@ export default function ContactPage() {
           </form>
           <div className="flex flex-row gap-6 justify-center items-center mt-8">
             <a href="https://www.linkedin.com/in/remi-emeriau/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-              <img
+              <Image
                 src="/logos/linkedin.png"
                 alt="LinkedIn"
                 width={40}
@@ -116,7 +116,7 @@ export default function ContactPage() {
               />
             </a>
             <a href="https://github.com/pwned841" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-              <img
+              <Image
                 src="/logos/github.png"
                 alt="GitHub"
                 width={40}

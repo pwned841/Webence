@@ -3,6 +3,7 @@ import React from "react";
 import { Logo } from "./Logo";
 import { useTheme } from "next-themes";
 import Link from "next/link";
+import Image from "next/image";
 
 // Logo GitHub officiel noir ou blanc selon le thème
 const GitHubLogo = ({ theme }: { theme: string | undefined }) => (
@@ -91,7 +92,7 @@ export const Footer = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img
+                    <Image
                       src="/logos/linkedin.png"
                       alt="LinkedIn"
                       width={32}
@@ -108,7 +109,7 @@ export const Footer = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img
+                    <Image
                       src="/logos/github.png"
                       alt="GitHub"
                       width={32}
